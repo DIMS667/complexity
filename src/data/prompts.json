@@ -1,0 +1,96 @@
+{
+  "templates": [
+    {
+      "id": "summarize",
+      "title": "Summarize Text",
+      "prompt": "Please summarize the following text concisely while maintaining the key points:\n\n[TEXT]",
+      "category": "productivity"
+    },
+    {
+      "id": "explain-code",
+      "title": "Explain Code",
+      "prompt": "Please explain what this code does in simple terms:\n\n```\n[CODE]\n```",
+      "category": "coding"
+    },
+    {
+      "id": "brainstorm",
+      "title": "Brainstorm Ideas",
+      "prompt": "Help me brainstorm creative ideas for [TOPIC]. Please provide at least 10 diverse suggestions.",
+      "category": "creative"
+    },
+    {
+      "id": "debug",
+      "title": "Debug Code",
+      "prompt": "I'm getting an error in this code. Can you help me identify and fix the issue?\n\n```\n[CODE]\n```\n\nError message: [ERROR]",
+      "category": "coding"
+    },
+    {
+      "id": "write-email",
+      "title": "Write Professional Email",
+      "prompt": "Write a professional email about [TOPIC] to [RECIPIENT]. The tone should be [TONE] and include [KEY POINTS].",
+      "category": "productivity"
+    },
+    {
+      "id": "translate",
+      "title": "Translate Text",
+      "prompt": "Translate the following text from [SOURCE LANGUAGE] to [TARGET LANGUAGE]:\n\n[TEXT]",
+      "category": "language"
+    },
+    {
+      "id": "review-writing",
+      "title": "Review Writing",
+      "prompt": "Please review this text for grammar, clarity, and style. Suggest improvements:\n\n[TEXT]",
+      "category": "productivity"
+    },
+    {
+      "id": "create-test",
+      "title": "Create Unit Tests",
+      "prompt": "Create comprehensive unit tests for this function:\n\n```\n[CODE]\n```",
+      "category": "coding"
+    },
+    {
+      "id": "meal-plan",
+      "title": "Create Meal Plan",
+      "prompt": "Create a [DURATION] meal plan for someone who is [DIETARY PREFERENCES] and wants to [GOAL].",
+      "category": "lifestyle"
+    },
+    {
+      "id": "learn-topic",
+      "title": "Learn New Topic",
+      "prompt": "I want to learn about [TOPIC]. Please create a structured learning plan with resources and milestones.",
+      "category": "education"
+    }
+  ],
+  "categories": {
+    "productivity": {
+      "name": "Productivity",
+      "icon": "briefcase",
+      "description": "Templates for work and productivity"
+    },
+    "coding": {
+      "name": "Coding",
+      "icon": "code",
+      "description": "Programming and development templates"
+    },
+    "creative": {
+      "name": "Creative",
+      "icon": "palette",
+      "description": "Creative writing and brainstorming"
+    },
+    "language": {
+      "name": "Language",
+      "icon": "globe",
+      "description": "Translation and language learning"
+    },
+    "lifestyle": {
+      "name": "Lifestyle",
+      "icon": "heart",
+      "description": "Health, fitness, and lifestyle"
+    },
+    "education": {
+      "name": "Education",
+      "icon": "graduation-cap",
+      "description": "Learning and educational content"
+    }
+  }
+}

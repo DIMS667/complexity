@@ -1,0 +1,47 @@
+{
+  "greetings": [
+    "Hello! How can I assist you today?",
+    "Hi there! I'm here to help. What would you like to know?",
+    "Greetings! Feel free to ask me anything.",
+    "Hello! I'm ready to help with any questions or tasks you have.",
+    "Hi! What can I do for you today?"
+  ],
+  "status": [
+    "I'm functioning perfectly and ready to help! How can I assist you?",
+    "I'm doing great, thank you for asking! What can I help you with?",
+    "All systems operational! How may I be of service?",
+    "I'm here and ready to assist you with anything you need!"
+  ],
+  "coding": [
+    "I can help you with various programming tasks! Here's a quick example:\n\n```python\ndef fibonacci(n):\n    if n <= 1:\n        return n\n    return fibonacci(n-1) + fibonacci(n-2)\n\n# Generate first 10 Fibonacci numbers\nfor i in range(10):\n    print(f\"F({i}) = {fibonacci(i)}\")\n```\n\nWhat specific programming challenge are you working on?",
+    "Programming is one of my specialties! Whether it's:\n- **Debugging** existing code\n- **Writing** new functions\n- **Optimizing** performance\n- **Explaining** concepts\n\nI'm here to help. What language or framework are you working with?",
+    "Let me assist with your code! I support many languages including:\n\n1. Python\n2. JavaScript/TypeScript\n3. Java\n4. C++\n5. Go\n6. Rust\n\nWhat would you like to build or debug today?"
+  ],
+  "explanations": [
+    "I'll break this down into simple, understandable parts:\n\n## Overview\nThis concept involves several key components that work together.\n\n## Key Points\n1. **Foundation**: The basic principle underlying this concept\n2. **Application**: How it's used in practice\n3. **Benefits**: Why it matters\n\n## Example\nThink of it like a system where each part has a specific role, working together harmoniously.\n\nWould you like me to elaborate on any particular aspect?",
+    "Let me explain this concept clearly:\n\n### What it is\nAt its core, this is about understanding the fundamental principles.\n\n### How it works\n1. First, we establish the baseline\n2. Then, we build upon that foundation\n3. Finally, we see the complete picture\n\n### Why it matters\nThis knowledge helps you make better decisions and understand complex systems.\n\nIs there a specific part you'd like to explore deeper?",
+    "Great question! Here's a comprehensive explanation:\n\n**The Basics:**\nThis concept represents an important principle in its field.\n\n**Technical Details:**\n- Component A: Handles the primary function\n- Component B: Provides support and optimization\n- Component C: Manages interactions\n\n**Real-world Applications:**\nYou'll find this used in various industries and scenarios.\n\nWhat aspect would you like to focus on?"
+  ],
+  "help": [
+    "I'm here to help you with a wide range of tasks:\n\n✨ **Creative Work**\n- Writing and editing\n- Brainstorming ideas\n- Content creation\n\n🎓 **Learning & Education**\n- Explaining concepts\n- Homework assistance\n- Research help\n\n💻 **Technical Support**\n- Programming\n- Debugging\n- System design\n\n📊 **Analysis & Strategy**\n- Data interpretation\n- Problem-solving\n- Planning\n\nWhat area would you like assistance with?",
+    "I can assist you in many ways! Here are some things I excel at:\n\n1. **Answer Questions**: From simple facts to complex explanations\n2. **Generate Content**: Essays, stories, emails, and more\n3. **Solve Problems**: Math, logic, coding challenges\n4. **Provide Guidance**: Advice, suggestions, and recommendations\n5. **Analyze Information**: Data, text, patterns\n\nWhat specific help do you need?",
+    "Let me help you get started! I can:\n- 📝 Write and edit text\n- 🔍 Research and explain topics\n- 💡 Brainstorm and generate ideas\n- 🛠️ Debug and write code\n- 📈 Analyze and organize data\n- 🎯 Plan and strategize\n\nTell me what you're working on!"
+  ],
+  "thanks": [
+    "You're welcome! I'm glad I could help. Feel free to ask if you need anything else!",
+    "My pleasure! Don't hesitate to reach out if you have more questions.",
+    "Happy to help! I'm here whenever you need assistance.",
+    "You're very welcome! It was my pleasure to assist you.",
+    "Glad I could be of help! Let me know if there's anything else you'd like to explore."
+  ],
+  "general": [
+    "That's an interesting topic! Let me provide you with comprehensive information:\n\n## Key Insights\n\nBased on current understanding, there are several important factors to consider.\n\n### Main Points\n1. **Context**: Understanding the broader picture is essential\n2. **Details**: The specifics matter for accurate implementation\n3. **Applications**: Real-world usage varies by situation\n\n### Considerations\n- Evaluate your specific needs\n- Consider available resources\n- Plan for potential challenges\n\nWould you like me to elaborate on any particular aspect?",
+    "I understand what you're looking for. Here's my analysis:\n\n**Overview:**\nThis involves multiple interconnected elements that work together.\n\n**Important Factors:**\n- Primary considerations for success\n- Secondary elements that provide support\n- External factors that may influence outcomes\n\n**Recommendations:**\n1. Start with a solid foundation\n2. Build incrementally\n3. Test and refine as you go\n\nIs there a specific angle you'd like to explore further?",
+    "Let me help you with that. Based on the information available:\n\n### Summary\nThis is a multifaceted topic with several important dimensions.\n\n### Key Elements\n- **Foundation**: The underlying principles\n- **Implementation**: How to put it into practice\n- **Optimization**: Ways to improve results\n\n### Next Steps\n1. Identify your specific goals\n2. Gather necessary resources\n3. Create an action plan\n\nWhat would you like to focus on first?"
+  ],
+  "errors": [
+    "I apologize, but I encountered an issue processing that request. Could you please rephrase or provide more details?",
+    "I'm having trouble understanding that. Could you clarify what you're looking for?",
+    "Something went wrong on my end. Let me try a different approach. What specifically would you like help with?"
+  ]
+}
