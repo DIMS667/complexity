@@ -1,52 +1,42 @@
 [
   {
-    "id": "gpt-4",
-    "name": "GPT-4",
-    "description": "Most capable model for complex tasks with superior reasoning",
-    "contextWindow": "128k",
-    "speed": "Moderate",
-    "badge": "Most Capable",
-    "capabilities": ["reasoning", "coding", "analysis", "creative"],
-    "icon": "brain"
-  },
-  {
-    "id": "gpt-3.5-turbo",
-    "name": "GPT-3.5 Turbo",
-    "description": "Fast and efficient for everyday tasks",
-    "contextWindow": "16k",
-    "speed": "Fast",
-    "badge": "Fastest",
-    "capabilities": ["general", "coding", "conversation"],
+    "id": "gemini-2.5-flash",
+    "name": "⚡ Gemini 2.5 Flash",
+    "description": "Rapide, gratuit et recommandé pour conversations générales",
+    "contextWindow": "1M tokens",
+    "speed": "Très rapide",
+    "badge": "Recommandé",
+    "capabilities": ["text", "conversation", "coding"],
     "icon": "zap"
   },
   {
-    "id": "claude-3",
-    "name": "Claude 3 Opus",
-    "description": "Excellent for nuanced understanding and detailed analysis",
-    "contextWindow": "200k",
-    "speed": "Moderate",
-    "badge": "Best Context",
-    "capabilities": ["analysis", "writing", "reasoning", "coding"],
+    "id": "gemini-flash-latest",
+    "name": "🚀 Gemini Flash Latest",
+    "description": "Dernière version stable de Gemini Flash",
+    "contextWindow": "1M tokens",
+    "speed": "Très rapide",
+    "badge": "Latest",
+    "capabilities": ["text", "conversation", "coding"],
     "icon": "sparkles"
   },
   {
-    "id": "llama-2",
-    "name": "Llama 2 70B",
-    "description": "Open source model with strong performance",
-    "contextWindow": "4k",
-    "speed": "Fast",
-    "badge": "Open Source",
-    "capabilities": ["general", "coding", "conversation"],
-    "icon": "gauge"
+    "id": "gemini-2.0-flash",
+    "name": "⚡ Gemini 2.0 Flash",
+    "description": "Version 2.0 stable et rapide",
+    "contextWindow": "1M tokens",
+    "speed": "Rapide",
+    "badge": "Stable",
+    "capabilities": ["text", "conversation", "coding"],
+    "icon": "zap"
   },
   {
-    "id": "gemini-pro",
-    "name": "Gemini Pro",
-    "description": "Google's advanced model with multimodal capabilities",
-    "contextWindow": "32k",
-    "speed": "Fast",
-    "badge": "Multimodal",
-    "capabilities": ["general", "vision", "coding", "reasoning"],
-    "icon": "stars"
+    "id": "gemini-2.5-flash-lite",
+    "name": "🪶 Gemini 2.5 Flash Lite",
+    "description": "Ultra-léger et ultra-rapide",
+    "contextWindow": "1M tokens",
+    "speed": "Ultra rapide",
+    "badge": "Lite",
+    "capabilities": ["text", "conversation"],
+    "icon": "feather"
   }
 ]

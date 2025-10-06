@@ -1,8 +1,9 @@
-// API Configuration
 export const API_CONFIG = {
-  BASE_URL: import.meta.env?.VITE_API_URL || 'http://localhost:3000',
+  BASE_URL: import.meta.env?.VITE_API_URL || 'http://localhost:8000',
+  DJANGO_API_URL: 'http://localhost:8000/api',
   TIMEOUT: 30000,
   MAX_RETRIES: 3,
+  USE_MOCK_DATA: false, // Sera détecté automatiquement
 };
 
 // Message Configuration
@@ -15,7 +16,7 @@ export const MESSAGE_CONFIG = {
 
 // UI Configuration
 export const UI_CONFIG = {
-  SIDEBAR_WIDTH: 288, // 72 * 4 (w-72)
+  SIDEBAR_WIDTH: 288,
   MAX_TITLE_LENGTH: 30,
   DEBOUNCE_DELAY: 300,
   TOAST_DURATION: 3000,
@@ -26,19 +27,20 @@ export const UI_CONFIG = {
 export const STORAGE_CONFIG = {
   MAX_CONVERSATIONS: 100,
   MAX_MESSAGES_PER_CONVERSATION: 1000,
-  CACHE_DURATION: 3600000, // 1 hour
+  CACHE_DURATION: 3600000,
   AUTO_SAVE_DELAY: 1000,
 };
 
 // Model Configuration
 export const MODEL_CONFIG = {
-  DEFAULT_MODEL: 'gpt-4',
+  DEFAULT_MODEL: 'gemini-1.5-flash', 
   DEFAULT_TEMPERATURE: 0.7,
   DEFAULT_MAX_TOKENS: 2000,
   DEFAULT_TOP_P: 1,
   DEFAULT_FREQUENCY_PENALTY: 0,
   DEFAULT_PRESENCE_PENALTY: 0,
 };
+
 
 // Feature Flags
 export const FEATURES = {
@@ -80,41 +82,36 @@ export const THEMES = {
 
 // Error Messages
 export const ERROR_MESSAGES = {
-  NETWORK_ERROR: 'Network error. Please check your connection.',
-  RATE_LIMIT: 'Too many requests. Please wait a moment.',
-  INVALID_INPUT: 'Invalid input. Please check your message.',
-  STORAGE_FULL: 'Storage is full. Please delete some conversations.',
-  GENERIC_ERROR: 'Something went wrong. Please try again.',
+  NETWORK_ERROR: 'Erreur réseau. Vérifiez votre connexion.',
+  RATE_LIMIT: 'Trop de requêtes. Veuillez patienter.',
+  INVALID_INPUT: 'Entrée invalide. Vérifiez votre message.',
+  STORAGE_FULL: 'Stockage plein. Supprimez des conversations.',
+  GENERIC_ERROR: 'Une erreur s\'est produite. Réessayez.',
+  API_UNAVAILABLE: 'API indisponible. Mode simulation activé.',
 };
 
 // Success Messages
 export const SUCCESS_MESSAGES = {
-  CONVERSATION_CREATED: 'New conversation created',
-  CONVERSATION_DELETED: 'Conversation deleted',
-  MESSAGE_COPIED: 'Message copied to clipboard',
-  SETTINGS_SAVED: 'Settings saved successfully',
-  EXPORT_COMPLETE: 'Export completed successfully',
+  CONVERSATION_CREATED: 'Nouvelle conversation créée',
+  CONVERSATION_DELETED: 'Conversation supprimée',
+  MESSAGE_COPIED: 'Message copié',
+  SETTINGS_SAVED: 'Paramètres sauvegardés',
+  EXPORT_COMPLETE: 'Export terminé',
+  API_CONNECTED: 'Connecté à l\'API Django',
 };
 
-/**
- * ✅ NEW: Keyboard shortcuts consumed by SettingsPanel
- * Shape: { [id]: { key: string, ctrlKey?: boolean, shiftKey?: boolean, description: string } }
- */
 export const DEFAULT_SHORTCUTS = {
-  newChat:        { key: 'n', ctrlKey: true,  shiftKey: true,  description: 'New conversation' },
-  focusInput:     { key: '/', ctrlKey: false, shiftKey: false, description: 'Focus message box' },
-  sendMessage:    { key: 'Enter', ctrlKey: false, shiftKey: false, description: 'Send message' },
-  newLine:        { key: 'Enter', ctrlKey: false, shiftKey: true,  description: 'Insert line break' },
-  toggleTheme:    { key: 'l', ctrlKey: true,  shiftKey: true,  description: 'Toggle Light/Dark' },
-  openSettings:   { key: ',', ctrlKey: true,  shiftKey: false, description: 'Open settings' },
-  quickSearch:    { key: 'k', ctrlKey: true,  shiftKey: false, description: 'Quick search' },
-  nextConversation:{ key: ']', ctrlKey: true, shiftKey: false, description: 'Next conversation' },
-  prevConversation:{ key: '[', ctrlKey: true, shiftKey: false, description: 'Previous conversation' },
+  newChat: { key: 'n', ctrlKey: true, shiftKey: true, description: 'New conversation' },
+  focusInput: { key: '/', ctrlKey: false, shiftKey: false, description: 'Focus message box' },
+  sendMessage: { key: 'Enter', ctrlKey: false, shiftKey: false, description: 'Send message' },
+  newLine: { key: 'Enter', ctrlKey: false, shiftKey: true, description: 'Insert line break' },
+  toggleTheme: { key: 'l', ctrlKey: true, shiftKey: true, description: 'Toggle Light/Dark' },
+  openSettings: { key: ',', ctrlKey: true, shiftKey: false, description: 'Open settings' },
+  quickSearch: { key: 'k', ctrlKey: true, shiftKey: false, description: 'Quick search' },
+  nextConversation: { key: ']', ctrlKey: true, shiftKey: false, description: 'Next conversation' },
+  prevConversation: { key: '[', ctrlKey: true, shiftKey: false, description: 'Previous conversation' },
 };
 
-/**
- * ✅ NEW: Defaults for UI settings so "Reset" works predictably
- */
 export const DEFAULT_SETTINGS = {
   language: 'en',
   fontSize: 'medium',

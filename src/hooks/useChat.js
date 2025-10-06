@@ -1,3 +1,4 @@
+//useChat.js
 import { useChatContext } from '../contexts/ChatContext'
 
 export const useChat = () => {

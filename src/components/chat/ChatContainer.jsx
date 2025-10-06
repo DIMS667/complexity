@@ -1,3 +1,4 @@
+//ChatContainer.jsx
 import { useEffect, useRef } from 'react'
 import { useChatContext } from '../../contexts/ChatContext'
 import MessageList from './MessageList'

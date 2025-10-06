@@ -76,7 +76,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           {/* Footer */}
           <div className="p-4 border-t border-gray-200 dark:border-dark-400">
             <div className="text-xs text-gray-500 dark:text-gray-400 text-center">
-              AI Assistant v1.0
+              DIMITRI IA, MERCI GEMINI
             </div>
           </div>
         </div>
